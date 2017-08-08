@@ -35,6 +35,11 @@
             <artifactId>mytest-service</artifactId>
             <version>${project.version}</version>
         </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>RELEASE</version>
+        </dependency>
     </dependencies>
     <build>
         <finalName>mytest-web</finalName>

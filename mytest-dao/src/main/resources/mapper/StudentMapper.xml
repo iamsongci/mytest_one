@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.songci.mytest_one.dao.StudentDao">
+    <sql id="field">id,name,sex,address</sql>
+    <insert id="insert" >
+        INSERT t_student(id,name,sex,address) VALUES (#{id},#{name},#{sex},#{address})
+    </insert>
+    <delete id="delete">
+        DELETE FROM t_student WHERE id=#{id}
+    </delete>
+    <update id="update">
+        UPDATE t_student
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="name!= null and name !='' and name != 'null'">name=#{name},</if>
+            <if test="sex!= null ">sex=#{sex},</if>
+            <if test="address!= null and address !='' and address != 'null'">address=#{address}</if>
+        </trim>
+        WHERE id=#{id} ;
+    </update>
+    <select id="select" resultType="Student">
+        SELECT * FROM t_student
+        <trim prefix="WHERE" prefixOverrides="AND">
+            <if test="id!= null and id !='' ">id=#{id}</if>
+            <if test="name!= null and name !='' and name != 'null'">AND name=#{name}</if>
+            <if test="sex!= null ">AND sex=#{sex}</if>
+            <if test="address!= null and address !='' and address != 'null'">AND address=#{address}</if>
+        </trim>
+    </select>
+</mapper>
