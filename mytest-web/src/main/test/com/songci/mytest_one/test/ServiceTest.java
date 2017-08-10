@@ -36,14 +36,14 @@
 //    public void updateTest()throws Exception{
 //        Student student=new Student();
 //        student.setId(new Integer("4"));
-//        student.setAddress("中国台湾");
+//        student.setAddress("中国");
 //        System.out.println(studentService.updateStudentById(student));
 //    }
 //    @Test
 //    public void select()throws Exception{
 ////        Student student=new Student();
 ////        student.setId(new Integer("1"));
-//        List<Student> list=studentService.findAllStudent(null);
+//        List<Student> list=(List<Student>)studentService.findAllStudent(null).getResult();
 //        for (Student s:list){
 //            System.out.println(s.toString());
 //        }

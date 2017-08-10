@@ -1,6 +1,7 @@
 package com.songci.mytest_one.service;
 
 import com.songci.mytest_one.model.Student;
+import com.songci.mytest_one.model.utils.ResultVo;
 
 import java.util.List;
 
@@ -34,6 +35,6 @@ public interface StudentService {
      * @param student
      * @return
      */
-    List<Student> findAllStudent(Student student);
+    ResultVo findAllStudent(Student student);
 
 }
