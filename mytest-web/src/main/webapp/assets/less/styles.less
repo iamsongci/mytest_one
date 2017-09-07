@@ -1,0 +1,163 @@
+/* colors */
+@base:#ffffff;
+@text: #555555;
+@badge: #007AFF;
+
+
+body, .main-container, .footer, .main-navigation, ul.main-navigation-menu > li > ul.sub-menu, .navigation-small ul.main-navigation-menu > li > ul.sub-menu {
+ background-color: darken(@base, 4%);
+} 
+.layout-boxed header, .layout-boxed .main-container, .layout-boxed .footer {
+
+  border-left-color:darken(@base, 15%);
+  border-right-color:darken(@base, 15%);
+}
+.navbar-inverse {
+  background: fade(@base, 90%);
+  border-color:darken(@base, 15%);
+}
+/* ie8 fixes */
+.ie8 .navbar-inverse {
+  background: @base;
+}
+/**/
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-brand:hover, .navbar-inverse .nav > li > a {
+  color: lighten(contrast(@base), 35%);
+}
+.navbar-inverse .navbar-brand i, .navbar-inverse .navbar-brand:hover i {
+  color: @badge;
+}
+
+.navbar-inverse .nav > li > a {
+  color: lighten(@text, 30%);
+}
+.navbar-inverse .nav > li.current-user > a {
+  color:lighten(@text, 15%);
+}
+.navbar-inverse .nav > li.current-user > a i {
+  display: inline-block;
+  text-align: center;
+  width: 1.25em;
+  color: @badge !important;
+  font-size: 12px;
+}
+.navbar-inverse .nav > li:hover > a, .navbar-inverse .nav > li:active > a {
+  color: @text;
+  background: darken(@base, 10%);
+}
+.navbar-inverse .nav li.dropdown.open > .dropdown-toggle, .navbar-inverse .nav li.dropdown.active > .dropdown-toggle, .navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle {
+  background: darken(@base, 10%);
+  color: @text;
+}
+
+.navbar-tools .dropdown-menu li .dropdown-menu-title {
+  background: darken(@base, 10%);
+  color: contrast(darken(@base, 10%));
+}
+.navbar-inverse .btn-navbar {
+  background-color: lighten(@text, 50%);
+  background: -moz-linear-gradient(top, #34485e 0%, #283b52 100%); /* firefox */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#34485e), color-stop(100%,#283b52)); /* webkit */
+}
+
+.nav > li.dropdown .dropdown-toggle .badge {
+  background-color: @badge;
+  color:contrast(@badge);
+  border: none;
+}
+.navbar-toggle {
+  background-color: @base;
+}
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+  background-color: darken(@base, 50%);
+}
+.navbar-toggle span {
+  color: lighten(@text, 30%);
+}
+
+ul.main-navigation-menu > li a {
+  border-bottom: none;
+  border-top-color:darken(@base, 15%);
+  color: @text;
+}
+ul.main-navigation-menu > li a > i {
+  color: @badge;
+  font-weight: normal;
+}
+ul.main-navigation-menu > li.active > a {
+  background: @badge !important;
+  border-top: none !important;
+  color: contrast(@badge);
+}
+ul.main-navigation-menu > li.active > a .selected:before {
+  color: @badge !important;
+}
+ul.main-navigation-menu > li.active > a i {
+  color: contrast(@badge);
+}
+ul.main-navigation-menu > li.open > a, ul.main-navigation-menu > li > a:hover, ul.main-navigation-menu > li:hover > a {
+  background-color: darken(@base, 10%);
+}
+.navigation-toggler, .go-top {
+  background-color: darken(@base, 10%) !important;
+  color: fade(@text, 30%);
+  
+}
+.navigation-toggler:hover i:first-child, .go-top:hover {
+  color: @text; 
+}
+.navigation-toggler:hover i:last-child {
+  color: fade(@text, 30%);
+}
+.navigation-small .navigation-toggler:hover i:first-child {
+  color: fade(@text, 30%);
+}
+.navigation-small .navigation-toggler:hover i:last-child {
+  color: @text;
+}
+
+ul.main-navigation-menu li > ul.sub-menu > li.open > a, ul.main-navigation-menu li > ul.sub-menu > li.active > a, ul.main-navigation-menu li > ul.sub-menu > li > a:hover {
+  color: contrast(darken(@base, 10%)) !important;
+  background: darken(@base, 10%);
+}
+.breadcrumb i {
+  color: fade(@badge, 40%);
+}
+.breadcrumb a {
+  color: @badge;
+}
+.footer-fixed .footer {
+  background: fade(@base, 90%);
+  border-top-color:darken(@base, 15%);
+}
+/* ie8 fixes */
+.ie8 .footer-fixed .footer {
+  background: @base;
+}
+/**/
+.footer-inner {
+  color: @text;
+}
+
+.main-content .container {
+  border-left: 1px solid darken(@base, 15%);
+  border-bottom: 1px solid darken(@base, 15%);
+}
+
+@media (max-width: 767px) {
+  .navbar-inverse {
+    background: none !important;
+  }
+  .navbar-tools {
+    background: fade(@base, 90%);
+    border-top-color:darken(@base, 15%);
+  }
+  /* ie8 fixes */
+  .ie8 .navbar-tools {
+    background: @base;
+  }
+/**/
+  .navbar-header {
+    background-color: @base;
+  }
+}

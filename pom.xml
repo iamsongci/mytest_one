@@ -233,6 +233,11 @@
             <artifactId>aspectjrt</artifactId>
             <version>${aspectj.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.sitemesh</groupId>
+            <artifactId>sitemesh</artifactId>
+            <version>3.0.0</version>
+        </dependency>
         <!--<dependency>-->
             <!--<groupId>com.squareup.okhttp3</groupId>-->
             <!--<artifactId>okhttp</artifactId>-->

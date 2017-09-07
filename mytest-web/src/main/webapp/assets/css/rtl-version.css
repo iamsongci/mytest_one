@@ -1,0 +1,747 @@
+/* ---------------------------------------------------------------------- */
+/*	Basic Elements & Classes
+ /* ---------------------------------------------------------------------- */
+body {
+	direction: rtl;
+}
+/* ---------------------------------------------------------------------- */
+/*	Forms
+ /* ---------------------------------------------------------------------- */
+body.rtl .help-button {
+	right: 7px;
+	left: auto;
+}
+body.rtl span.input-help > input {
+	padding-right: 30px;
+	padding-left: 6px;
+}
+body.rtl .radio-inline, body.rtl .radio-inline + .radio-inline, body.rtl .checkbox-inline, body.rtl .checkbox-inline + .checkbox-inline {
+	margin: 5px 0 10px 10px !important;
+}
+body.rtl .radio-inline, body.rtl .checkbox-inline {
+	padding-left: 0;
+	padding-right: 20px;
+}
+body.rtl .input-group .form-control:first-child, body.rtl .input-group-addon:first-child, body.rtl .input-group-btn:first-child > .btn, body.rtl .input-group-btn:first-child > .dropdown-toggle, body.rtl .input-group-btn:last-child > .btn:not(:last-child)
+:not(.dropdown-toggle) {
+	border-bottom-right-radius: 4px;
+	border-top-right-radius: 4px;
+	border-bottom-left-radius: 0;
+	border-top-left-radius: 0;
+}
+body.rtl .input-group-addon:first-child {
+	border-left: none;
+	border-right: 1px solid #CCCCCC;
+}
+body.rtl .input-group-addon:last-child {
+	border-right: none;
+	border-left: 1px solid #CCCCCC;
+}
+body.rtl .input-group-btn:last-child > .btn {
+	margin-left: 0;
+	margin-right: -1px;
+}
+/*tags input*/
+body.rtl div.tagsinput span.tag {
+	float: right;
+}
+body.rtl div.tagsinput div {
+	float: right;
+}
+/*select 2*/
+body.rtl .select2-container-multi .select2-choices .select2-search-choice {
+	padding: 3px 18px 3px 5px;
+	margin: 3px 5px 3px 0;
+}
+body.rtl .select2-container-multi .select2-choices li {
+	float: right;
+}
+body.rtl .select2-container .select2-choice .select2-arrow {
+	border-left: none;
+	border-right: 1px solid #AAAAAA;
+	left: 0;
+	right: auto;
+	border-radius: 0;
+}
+body.rtl .checkbox-table {
+	padding-left: 0;
+	padding-right: 20px;
+}
+/*colorpicker*/
+body.rtl .colorpicker {
+	right: auto !important;
+}
+/**/
+body.rtl .form-horizontal .form-group > div {
+	float: right;
+}
+body.rtl .form-horizontal .form-group > label {
+	float: right;
+	text-align: left;
+}
+body.rtl [class^="icheckbox_"], body.rtl [class*="icheckbox_"], body.rtl [class^="iradio_"], body.rtl [class*="iradio_"] {
+	float: right !important;
+	margin: 0 -20px 0 5px !important;
+}
+body.rtl .radio, body.rtl .checkbox {
+	padding-left: 0;
+	padding-right: 20px;
+}
+body.rtl .help-inline {
+	float: right;
+}
+body.rtl .form-group label {
+	float: none;
+}
+/* ---------------------------------------------------------------------- */
+/*	Data Table
+ /* ---------------------------------------------------------------------- */
+div.dataTables_paginate {
+	float: left !important;
+}
+/* ---------------------------------------------------------------------- */
+/*	Login
+ /* ---------------------------------------------------------------------- */
+body.login.rtl a.forgot {
+	right: auto;
+	left: 10px;
+}
+body.login input.password {
+	padding-left: 130px;
+	padding-right: 25px;
+}
+/* ---------------------------------------------------------------------- */
+/*	Generic Classes
+ /* ---------------------------------------------------------------------- */
+body.rtl .close {
+	float: left;
+}
+/* ---------------------------------------------------------------------- */
+/*  Navbar and navbar elements
+ /* ---------------------------------------------------------------------- */
+body.rtl .navbar-tools > ul {
+	float: left !important;
+}
+body.rtl .navbar-tools > ul > li {
+	float: right !important;
+}
+body.rtl .navbar-tools .dropdown-menu {
+	right: auto;
+	left: 0;
+}
+body.rtl .navbar-tools .dropdown-menu li a .time {
+	float: left;
+}
+body.rtl .navbar-tools .dropdown-menu li.view-all a i {
+	float: left;
+}
+body.rtl .navbar-tools .thread-image {
+	margin-left: 8px;
+	margin-right: 0;
+	float: right;
+}
+body.rtl .navbar-tools > ul > li.dropdown .dropdown-toggle .badge {
+	left: 24px;
+	right: auto;
+}
+/* ---------------------------------------------------------------------- */
+/*	Search Box
+ /* ---------------------------------------------------------------------- */
+body.rtl .search-box {
+	float: left;
+}
+body.rtl .sidebar-search {
+	right: auto;
+	left: 10px;
+	padding: 0 5px 0 30px;
+}
+body.rtl .sidebar-search .form-group button {
+	right: auto;
+	left: 4px;
+}
+/* ---------------------------------------------------------------------- */
+/*	Buttons
+ /* ---------------------------------------------------------------------- */
+body.rtl .btn-icon .badge {
+	left: -5px;
+	right: auto;
+}
+body.rtl .input-group .form-control:last-child, body.rtl .input-group-addon:last-child, body.rtl .input-group-btn:last-child > .btn, body.rtl .input-group-btn:last-child > .dropdown-toggle, body.rtl .input-group-btn:first-child > .btn:not(:first-child) {
+border-bottom-left-radius: 4px;
+border-top-left-radius: 4px;
+border-bottom-right-radius: 0;
+border-top-right-radius: 0;
+}
+body.rtl .btn-group > .btn:last-child:not(:first-child)
+:not(.dropdown-toggle) {
+	border-bottom-left-radius: 4px;
+	border-top-left-radius: 4px;
+	border-bottom-right-radius: 0;
+	border-top-right-radius: 0;
+}
+body.rtl .btn-group > .btn:first-child:not(:last-child)
+:not(.dropdown-toggle) {
+	border-bottom-left-radius: 0;
+	border-top-left-radius: 0;
+	border-bottom-right-radius: 4px;
+	border-top-right-radius: 4px;
+}
+body.rtl .btn-group > .btn {
+	float: right;
+}
+body.rtl .btn-group-justified .btn {
+	float: none;
+}
+body.rtl .btn-group > .btn:last-child:not(:first-child), body.rtl .btn-group > .dropdown-toggle:not(:first-child) {
+border-bottom-left-radius: 4px;
+border-top-left-radius: 4px;
+border-bottom-right-radius: 0;
+border-top-right-radius: 0;
+}
+body.rtl .btn-group .btn + .btn, body.rtl .btn-group .btn + .btn-group, body.rtl .btn-group .btn-group + .btn, body.rtl .btn-group .btn-group + .btn-group {
+	margin-left: 0;
+	margin-right: -1px;
+}
+/* ---------------------------------------------------------------------- */
+/*	Panel Tools
+ /* ---------------------------------------------------------------------- */
+body.rtl .panel-tools {
+	position: absolute;
+	right: auto;
+	left: 5px;
+}
+body.rtl .panel-heading {
+	padding-right: 40px;
+	padding-left: 0;
+	box-shadow: 0 1px 0 #FFFFFF inset;
+}
+body.rtl .panel-heading > [class^="fa-"], body.rtl .panel-heading > [class*=" fa-"], body.rtl .panel-heading > [class^="icon-"], body.rtl .panel-heading > [class*=" icon-"], body.rtl .panel-heading > [class^="clip-"], body.rtl .panel-heading > [class*=" clip-"] {
+	border-left: 1px solid #CDCDCD;
+	box-shadow: -1px 0 0 0 #FFFFFF;
+	border-right: none;
+	left: auto;
+	right: 0;
+}
+/* ---------------------------------------------------------------------- */
+/*	Pagination
+ /* ---------------------------------------------------------------------- */
+body.rtl .pagination li a {
+	float: right;
+}
+body.rtl .pagination > li:last-child > a, body.rtl .pagination > li:last-child > span {
+	border-bottom-right-radius: 0px;
+	border-top-right-radius: 0px;
+	border-bottom-left-radius: 6px;
+	border-top-left-radius: 6px;
+}
+body.rtl .pagination > li:first-child > a, body.rtl .pagination > li:first-child > span {
+	border-bottom-right-radius: 6px;
+	border-top-right-radius: 6px;
+	border-bottom-left-radius: 0px;
+	border-top-left-radius: 0px;
+}
+/* ---------------------------------------------------------------------- */
+/*	ToDo List
+ /* ---------------------------------------------------------------------- */
+body.rtl .todo li a {
+	padding: 10px 35px 10px 10px !important;
+}
+body.rtl .todo li .todo-actions i {
+	margin: 0 0 0 5px;
+	right: 10px;
+	left: auto;
+}
+body.rtl .todo li .label {
+	right: auto;
+	left: 10px;
+}
+/* ---------------------------------------------------------------------- */
+/*	Activities
+ /* ---------------------------------------------------------------------- */
+body.rtl .activities li a {
+	padding: 10px 10px 10px 100px !important;
+}
+body.rtl .activities li .activity img {
+	margin-right: 0;
+	margin-left: 10px;
+}
+body.rtl .activities li .time {
+	right: auto;
+	left: 10px;
+}
+/* ---------------------------------------------------------------------- */
+/*	Footer and footer elemnts
+ /* ---------------------------------------------------------------------- */
+body.rtl .footer-inner {
+	float: right;
+}
+body.rtl .footer-items {
+	float: left;
+}
+/* ---------------------------------------------------------------------- */
+/*	Dropdown elements
+ /* ---------------------------------------------------------------------- */
+body.rtl .dropdown-menu {
+	right: 0;
+	left: auto;
+}
+/* ---------------------------------------------------------------------- */
+/*	Labels and Badges
+ /* ---------------------------------------------------------------------- */
+body.rtl .label {
+	display: inline-block;
+}
+/* ---------------------------------------------------------------------- */
+/*	Progress bar
+ /* ---------------------------------------------------------------------- */
+body.rtl .progress-bar {
+	float: right;
+}
+/* ---------------------------------------------------------------------- */
+/*	Tabs
+ /* ---------------------------------------------------------------------- */
+body.rtl .tabs-right > .nav-tabs > li {
+	float: none;
+}
+body.rtl .panel-tabs .nav-tabs {
+	float: left;
+}
+body.rtl .nav {
+	padding-right: 1px;
+}
+body.rtl .nav-tabs > li {
+	float: right;
+}
+body.rtl .tabs-left > .nav-tabs > li {
+	float: none;
+}
+body.rtl .tabs-left .nav {
+	padding-right: 0;
+}
+/* ---------------------------------------------------------------------- */
+/*	Accordion
+ /* ---------------------------------------------------------------------- */
+body.rtl .accordion-custom .panel-heading {
+	padding: 0;
+}
+body.rtl .accordion-teal .panel-heading .accordion-toggle {
+	border-right: 2px solid #569099;
+	border-left: none;
+}
+/* ---------------------------------------------------------------------- */
+/*	FileUpload
+ /* ---------------------------------------------------------------------- */
+body.rtl .fileupload-new .input-group .btn-file {
+	border-radius: 3px 0 0 3px !important;
+}
+/* ---------------------------------------------------------------------- */
+/*	Form Wizard
+ /* ---------------------------------------------------------------------- */
+body.rtl .swMain > ul li:first-child > a:before {
+	right: 50%;
+}
+/* ---------------------------------------------------------------------- */
+/*	Crop Image
+ /* ---------------------------------------------------------------------- */
+body.rtl .jcrop-holder #preview-pane {
+	left: -280px;
+	right: auto;
+}
+/* ---------------------------------------------------------------------- */
+/*	Messages
+ /* ---------------------------------------------------------------------- */
+body.rtl .messages-list {
+	border-right: none;
+	border-left: 1px solid #ECEAF3;
+	float: right;
+}
+body.rtl .messages-list .messages-item {
+	padding: 5px 25px 5px 15px;
+}
+body.rtl .messages-list .messages-item .messages-item-star {
+	left: auto;
+	right: 7px;
+}
+body.rtl .messages-list .messages-item .messages-item-attachment {
+	left: auto;
+	right: 7px;
+}
+body.rtl .messages-list .messages-item .messages-item-avatar {
+	float: right;
+}
+body.rtl .messages-list .messages-item .messages-item-from, body.rtl .messages-list .messages-item .messages-item-subject {
+	margin-left: 0;
+	margin-right: 45px;
+}
+body.rtl .messages-list .messages-item .messages-item-time {
+	right: auto;
+	left: 15px;
+}
+body.rtl .messages-list .messages-item .messages-item-time .messages-item-actions .tag-icon {
+	margin: 0 -13px 0 5px;
+}
+body.rtl .messages-content {
+	margin-left: 0;
+	margin-right: 260px;
+}
+body.rtl .messages-content .message-header .message-time {
+	right: auto;
+	left: 15px;
+}
+body.rtl .messages-content .message-header .message-actions a:first-child {
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 4px;
+	border-top-left-radius: 0;
+	border-top-right-radius: 4px;
+	border-right: 1px solid #F5F4F9;
+}
+body.rtl .messages-content .message-header .message-actions a:last-child {
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 4px;
+	border-right: none;
+	border-top-right-radius: 0;
+	border-top-left-radius: 4px;
+}
+/* ---------------------------------------------------------------------- */
+/*	Lock Screen
+ /* ---------------------------------------------------------------------- */
+body.lock-screen {
+	color: #7F7F7F;
+	background-image: url("../images/bg.png");
+	background-color: rgba(0, 0, 0, 0);
+}
+body.rtl.lock-screen .user-info {
+	float: left;
+}
+/* ---------------------------------------------------------------------- */
+/*	Style Selector
+ /* ---------------------------------------------------------------------- */
+body.rtl #style_selector {
+	left: 0;
+	right: auto;
+}
+body.rtl #style_selector .style-toggle {
+	border: 1px solid rgba(23, 24, 26, 0.15);
+	border-left: none;
+	border-radius: 0 5px 5px 0;
+}
+body.rtl #style_selector > .open:before {
+	content: "\e163";
+}
+body.rtl #style_selector > .open {
+	left: auto;
+	right: -35px;
+}
+body.rtl #style_selector > .close:before {
+	content: "\e162";
+}
+body.rtl #style_selector > .close {
+	left: 0;
+	right: auto
+}
+/* ---------------------------------------------------------------------- */
+/*	Home elements
+ /* ---------------------------------------------------------------------- */
+body.rtl .core-box .heading .circle-icon {
+	float: right;
+}
+body.rtl .core-box .heading h2 {
+	padding-left: 0;
+	padding-right: 65px;
+}
+body.rtl .core-box .view-more {
+	float: left;
+}
+body.rtl .mini-stats li {
+	border-left: 1px solid #DDDDDD;
+	border-right: 1px solid #FFFFFF;
+}
+body.rtl .mini-stats li:last-child {
+	border-left: none;
+}
+/* ---------------------------------------------------------------------- */
+/*	User profile
+ /* ---------------------------------------------------------------------- */
+body.rtl .user-left {
+	border-right: none;
+	padding-right: 0;
+	border-left: 1px solid #DDDDDD;
+	padding-left: 15px;
+}
+/* ---------------------------------------------------------------------- */
+/*	Main Navigation
+ /* ---------------------------------------------------------------------- */
+body.rtl ul.main-navigation-menu > li.active > a .selected:before {
+	left: -10px;
+	right: auto;
+	content: "\e19c";
+}
+body.rtl ul.main-navigation-menu li  a .badge {
+	float: left;
+	margin-right: 0;
+	margin-left: 13px;
+}
+body.rtl ul.main-navigation-menu li a .icon-arrow {
+	float: left;
+	margin-right: 0;
+	margin-left: 6px;
+}
+body.rtl ul.main-navigation-menu li > ul.sub-menu > li > a {
+	padding-left: 0 !important;
+	padding-right: 40px;
+}
+body.rtl ul.main-navigation-menu > li > ul.sub-menu > li > ul.sub-menu > li > ul.sub-menu > li > a {
+	padding-left: 0 !important;
+	padding-right: 80px;
+}
+body.rtl ul.main-navigation-menu > li > ul.sub-menu li > a .icon-arrow {
+	margin-right: 0;
+	margin-left: 22px;
+}
+body.rtl ul.main-navigation-menu > li > ul.sub-menu > li > ul.sub-menu > li > a {
+	padding-right: 60px;
+	padding-left: 0px !important;
+}
+body.rtl .navigation-toggler {
+	margin-right: 175px;
+	margin-left: 0;
+}
+/* ---------------------------------------------------------------------- */
+/*	Generic Bootstrap Class and Responsive Class
+ /* ---------------------------------------------------------------------- */
+@media (min-width: 980px) and (max-width: 1199px) {
+	body.rtl.layout-boxed > .navbar {
+		right: 50% !important;
+		margin-right: -470px !important;
+	}
+}
+
+@media (min-width: 1200px) {
+	body.rtl.layout-boxed > .navbar {
+		right: 50% !important;
+		margin-right: -500px !important;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+	.main-content {
+		margin-left: 0 !important;
+		margin-right: 35px !important;
+	}
+	body.rtl ul.main-navigation-menu > li > a {
+		padding-left: 0;
+		padding-right: 5px;
+	}
+	body.rtl ul.main-navigation-menu li > ul.sub-menu > li > a {
+		padding-right: 24px !important;
+		padding-left: 0 !important;
+	}
+	body.rtl ul.main-navigation-menu > li > ul.sub-menu > li > ul.sub-menu > li > a {
+		padding-right: 40px !important;
+		padding-left: 0 !important;
+	}
+	body.rtl ul.main-navigation-menu > li > ul.sub-menu > li > ul.sub-menu > li > ul.sub-menu > li > a {
+		padding-right: 60px !important;
+		padding-left: 0 !important;
+	}
+	body.rtl ul.main-navigation-menu > li:hover > a:after {
+		right: 35px;
+		left: 0;
+		background: url(../images/menu-white-arrow-rtl.png) left center no-repeat;
+	}
+	body.rtl ul.main-navigation-menu > li:hover > a .title {
+		padding-left: 0;
+		padding-right: 30px;
+	}
+	body.rtl ul.main-navigation-menu > li:hover > ul.sub-menu {
+		left: 0;
+		right: 36px;
+	}
+}
+@media (min-width: 768px) {
+	body.rtl .main-content {
+		margin-left: 0 !important;
+		margin-right: 225px;
+	}
+	body.rtl .navbar > .container > .navbar-header {
+		float: right !important;
+	}
+	body.rtl.navigation-small .main-content {
+		margin-left: 0 !important;
+		margin-right: 35px !important;
+	}
+	body.rtl.navigation-small ul.main-navigation-menu > li > a {
+		padding-left: 0;
+		padding-right: 5px;
+	}
+	body.rtl.navigation-small ul.main-navigation-menu li > ul.sub-menu > li > a {
+		padding-right: 24px !important;
+		padding-left: 0 !important;
+	}
+	body.rtl.navigation-small ul.main-navigation-menu > li > ul.sub-menu > li > ul.sub-menu > li > a {
+		padding-right: 40px !important;
+		padding-left: 0 !important;
+	}
+	body.rtl.navigation-small ul.main-navigation-menu > li > ul.sub-menu > li > ul.sub-menu > li > ul.sub-menu > li > a {
+		padding-right: 60px !important;
+		padding-left: 0 !important;
+	}
+	body.rtl.navigation-small ul.main-navigation-menu > li:hover > a:after {
+		right: 35px;
+		left: 0;
+		background: url(../images/menu-white-arrow-rtl.png) left center no-repeat;
+	}
+	body.rtl.navigation-small ul.main-navigation-menu > li:hover > a .title {
+		padding-left: 0;
+		padding-right: 30px;
+	}
+	body.rtl.navigation-small ul.main-navigation-menu > li:hover > ul.sub-menu {
+		left: 0;
+		right: 36px;
+	}
+	body.rtl .col-sm-1, body.rtl .col-sm-2, body.rtl .col-sm-3, body.rtl .col-sm-4, body.rtl .col-sm-5, body.rtl .col-sm-6, body.rtl .col-sm-7, body.rtl .col-sm-8, body.rtl .col-sm-9, body.rtl .col-sm-10, body.rtl .col-sm-11 {
+		float: right;
+	}
+	body.rtl .col-sm-offset-1 {
+		margin-right: 8.333333333333332%;
+	}
+	body.rtl .col-sm-offset-2 {
+		margin-right: 16.666666666666664%;
+	}
+	body.rtl .col-sm-offset-3 {
+		margin-right: 25%;
+	}
+	body.rtl .col-sm-offset-4 {
+		margin-right: 33.33333333333333%;
+	}
+	body.rtl .col-sm-offset-5 {
+		margin-right: 41.66666666666667%;
+	}
+	body.rtl .col-sm-offset-6 {
+		margin-right: 50%;
+	}
+	body.rtl .col-sm-offset-7 {
+		margin-right: 58.333333333333336%;
+	}
+	body.rtl .col-sm-offset-8 {
+		margin-right: 66.66666666666666%;
+	}
+	body.rtl .col-sm-offset-9 {
+		margin-right: 75%;
+	}
+	body.rtl .col-sm-offset-10 {
+		margin-right: 83.33333333333334%;
+	}
+	body.rtl .col-sm-offset-11 {
+		margin-right: 91.66666666666666%;
+	}
+}
+@media (min-width: 992px) {
+	body.rtl .col-md-1, body.rtl .col-md-2, body.rtl .col-md-3, body.rtl .col-md-4, body.rtl .col-md-5, body.rtl .col-md-6, body.rtl .col-md-7, body.rtl .col-md-8, body.rtl .col-md-9, body.rtl .col-md-10, body.rtl .col-md-11 {
+		float: right;
+	}
+	body.rtl .col-md-offset-0 {
+		margin-right: 0;
+	}
+	body.rtl .col-md-offset-1 {
+		margin-right: 8.333333333333332%;
+	}
+	body.rtl .col-md-offset-2 {
+		margin-right: 16.666666666666664%;
+	}
+	body.rtl .col-md-offset-3 {
+		margin-right: 25%;
+	}
+	body.rtl .col-md-offset-4 {
+		margin-right: 33.33333333333333%;
+	}
+	body.rtl .col-md-offset-5 {
+		margin-right: 41.66666666666667%;
+	}
+	body.rtl .col-md-offset-6 {
+		margin-right: 50%;
+	}
+	body.rtl .col-md-offset-7 {
+		margin-right: 58.333333333333336%;
+	}
+	body.rtl .col-md-offset-8 {
+		margin-right: 66.66666666666666%;
+	}
+	body.rtl .col-md-offset-9 {
+		margin-right: 75%;
+	}
+	body.rtl .col-md-offset-10 {
+		margin-right: 83.33333333333334%;
+	}
+	body.rtl .col-md-offset-11 {
+		margin-right: 91.66666666666666%;
+	}
+}
+@media (min-width: 1200px) {
+	body.rtl .col-lg-1, body.rtl .col-lg-2, body.rtl .col-lg-3, body.rtl .col-lg-4, body.rtl .col-lg-5, body.rtl .col-lg-6, body.rtl .col-lg-7, body.rtl .col-lg-8, body.rtl .col-lg-9, body.rtl .col-lg-10, body.rtl .col-lg-11 {
+		float: right;
+	}
+	body.rtl .col-lg-offset-0 {
+		margin-right: 0;
+	}
+	body.rtl .col-lg-offset-1 {
+		margin-right: 8.333333333333332%;
+	}
+	body.rtl .col-lg-offset-2 {
+		margin-right: 16.666666666666664%;
+	}
+	body.rtl .col-lg-offset-3 {
+		margin-right: 25%;
+	}
+	body.rtl .col-lg-offset-4 {
+		margin-right: 33.33333333333333%;
+	}
+	body.rtl .col-lg-offset-5 {
+		margin-right: 41.66666666666667%;
+	}
+	body.rtl .col-lg-offset-6 {
+		margin-right: 50%;
+	}
+	body.rtl .col-lg-offset-7 {
+		margin-right: 58.333333333333336%;
+	}
+	body.rtl .col-lg-offset-8 {
+		margin-right: 66.66666666666666%;
+	}
+	body.rtl .col-lg-offset-9 {
+		margin-right: 75%;
+	}
+	body.rtl .col-lg-offset-10 {
+		margin-right: 83.33333333333334%;
+	}
+	body.rtl .col-lg-offset-11 {
+		margin-right: 91.66666666666666%;
+	}
+}
+@media (max-width: 767px) {
+	body.rtl .nav > li > .dropdown-menu.notifications {
+		right: -110px !important;
+		left: auto !important;
+	}
+	body.rtl .nav > li > .dropdown-menu.posts {
+		right: -160px !important;
+		left: auto !important;
+	}
+	body.rtl .nav > li > .dropdown-menu.todo {
+		right: -60px !important;
+		left: auto !important;
+	}
+	body.rtl .nav > li.current-user > .dropdown-menu {
+		right: auto !important;
+		left: 0 !important;
+	}
+	body.rtl .navbar > .container > .navbar-header {
+		float: none !important;
+	}
+	body.rtl .navbar-brand {
+		float: right;
+	}
+	body.rtl .navbar-toggle {
+		float: left;
+	}
+}

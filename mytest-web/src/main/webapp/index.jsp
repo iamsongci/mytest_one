@@ -7,6 +7,7 @@
 <body>
 <h2>Hello World!</h2>
 <div>
+    <h1><a href="/student/home.do">点我查看通过Vue获取学生信息</a></h1>
     <h2>用异步请求获取学生信息</h2><br>
     请输入学生学号，如果是0则查询所有学生信息
     <input id="studentid"type="text"><button onclick="findStudentInfo()">点我查询</button>
