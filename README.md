@@ -14,3 +14,5 @@ Maven-maven多模块项目搭建+SSM框架整合
 [Maven多模块+SSM框架（五、Bootstrop3+Sitemesh3网页布局和修饰的框架）](http://www.imooc.com/article/20276)
 
 [Maven多模块+SSM框架（六、 Vue.js渐进式框架配合Ajax的简单使用 ）](http://www.imooc.com/article/20279)
+
+[Vue.js+14行代码----实现图片的放大缩小](https://www.imooc.com/article/23613)
